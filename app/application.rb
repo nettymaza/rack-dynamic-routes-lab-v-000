@@ -1,6 +1,6 @@
 class Application
-  
-  @@items = [Item.new("Shoes", "50"), Item.new("Pataloons", "100")]
+
+  @@items = [Item.new("Shoes", 50), Item.new("Pataloons", 100)]
 
   def call(env)
     resp = Rack::Response.new
@@ -8,7 +8,7 @@ class Application
 
     if req.path.match(/items/)
 
-    
+
   end
   resp.finish
 end
